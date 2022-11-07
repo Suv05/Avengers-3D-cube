@@ -1,0 +1,143 @@
+.warpe {
+    margin-top: 150px;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    display: inline-flex;
+
+}
+.warpe1 {
+    margin-top: 150px;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    display: inline-flex;
+}
+.container{
+    /* background-color: rgb(199, 191, 191);
+    border: 5px solid rgb(14, 14, 146); */
+    width: 100vw;
+    height: 70vh;
+
+}
+
+.cube {
+    transform-style: preserve-3d;
+    /* width: 200px; */
+    /* height: 200px; */
+    /* margin: auto; */
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-left: 600px;
+    padding-top: 230px;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+.cube1 {
+    transform-style: preserve-3d;
+    /* width: 200px; */
+    /* height: 200px; */
+    /* margin: auto; */
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-left: 600px;
+    padding-top: -15px;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.cube img {
+    position: absolute;
+    opacity: 0.8;
+    /* overflow: hidden; */
+    height: 200px;
+    width: 200px;
+
+}
+.cube1 img {
+    position: absolute;
+    opacity: 0.8;
+    /* overflow: hidden; */
+    height: 200px;
+    width: 200px;
+
+}
+
+
+
+.cube img:nth-child(1) {
+    transform: rotateY(0deg) translateZ(100px);
+}
+
+.cube img:nth-child(2) {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube img:nth-child(3) {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube img:nth-child(4) {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cube img:nth-child(5) {
+    transform: rotatex(90deg) translateZ(100px);
+}
+
+.cube img:nth-child(6) {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.cube1 img:nth-child(1) {
+    transform: rotateY(0deg) translateZ(100px);
+}
+
+.cube1 img:nth-child(2) {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube1 img:nth-child(3) {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube1 img:nth-child(4) {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cube1 img:nth-child(5) {
+    transform: rotatex(90deg) translateZ(100px);
+}
+
+.cube1 img:nth-child(6) {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+@keyframes loop {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    from {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+
+
+}
+@keyframes loop1 {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    from {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+
+
+}
+
+.cube {
+    animation: loop 10s infinite linear;
+}
+.cube1 {
+    animation: loop1 10s infinite linear;
+}
